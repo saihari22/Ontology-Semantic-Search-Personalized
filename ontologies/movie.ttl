@@ -1,0 +1,3633 @@
+@prefix : <http://www.movieontology.org/2009/10/01/movieontology.owl#> .
+@prefix z: <http://www.zotero.org/namespaces/export#> .
+@prefix ab: <http:learningsparql.com/ns/addressbook#> .
+@prefix bp: <http://www.biopax.org/release/biopax-level3.owl#> .
+@prefix cd: <http://www.recshop.fake/cd#> .
+@prefix cs: <http://purl.org/vocab/changeset/schema#> .
+@prefix ct: <http://www.iso-icdd.org/part1/2019/Container#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ex: <http://example.org/> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix fo: <http://www.w3.org/1999/XSL/Format> .
+@prefix gf: <http://www.intuit.com/ontology/invoice#> .
+@prefix hp: <http://purl.obolibrary.org/obo/hp#> .
+@prefix lg: <http://logicalgeometry.org/> .
+@prefix mo: <http://www.movieontology.org/2009/10/01/movieontology.owl#> .
+@prefix nl: <http://www.people.usi.ch/fornaran/ontology/NormativeLanguage#> .
+@prefix ns: <http://creativecommons.org/ns#> .
+@prefix si: <https://www.w3schools.com/rdf/> .
+@prefix sp: <http://spinrdf.org/sp#> .
+@prefix ub: <http://swat.cse.lehigh.edu/onto/univ-bench.owl#> .
+@prefix up: <http://www.userpreferenceExample.com#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix wo: <http://wo.com#> .
+@prefix acl: <http://acl.it#> .
+@prefix bib: <http://purl.org/net/biblio#> .
+@prefix bmw: <http://www.bmw-kg.de/entity/> .
+@prefix csA: <http://www.atl.lmco.com/projects/ontology/ontologies/comsci/csA.rdf#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix gov: <http://gov.genealogy.net/ontology.owl#> .
+@prefix hp2: <http://purl.obolibrary.org/obo/hp.owl#> .
+@prefix j.0: <http://www.maisis.com/owl#> .
+@prefix j.1: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix j.2: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix j.3: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix j.4: <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#> .
+@prefix j.5: <http://ontologydesignpatterns.org/cp/owl/semiotics.owl#> .
+@prefix j.6: <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#> .
+@prefix j.7: <http://www.ontologydesignpatterns.org/ont/boxer/boxer.owl#> .
+@prefix j.8: <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#> .
+@prefix j.9: <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#> .
+@prefix mls: <http://www.w3.org/ns/mls#> .
+@prefix mo2: <http://www.movieontology.org/2009/11/09/movieontology.owl#> .
+@prefix nbo: <http://purl.obolibrary.org/obo/nbo.owl#> .
+@prefix ns0: <http://chintan.com/physics/> .
+@prefix ns1: <http://www.example.com/WS/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ppo: <http://ppo.it#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix res: <http://www.w3.org/2005/sparql-results#> .
+@prefix sct: <http://www.semanticweb.org/ontologies/2013/2/Ontology1362609471108.owl#> .
+@prefix smf: <http://topbraid.org/sparqlmotionfunctions#> .
+@prefix spl: <http://spinrdf.org/spl#> .
+@prefix svg: <http://www.w3.org/2000/svg> .
+@prefix vin: <http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#> .
+@prefix vtb: <https://www.farmland.org/vegetables#> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix www: <http://www.movieontology.org/2009/11/09/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsi: <http://www.w3.org/2001/XMLSchema-instance> .
+@prefix xsp: <http://www.owl-ontologies.com/2005/08/07/xsp.owl#> .
+@prefix SCTO: <https://bioportal.bioontology.org/ontologies/SCTO#> .
+@prefix Test: <Test#> .
+@prefix base: <http://www.cs.umd.edu/projects/plus/DAML/onts/base1.0.daml#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix daml: <http://www.daml.org/2000/12/daml+oil#> .
+@prefix doid: <http://www.disease-ontology.org/> .
+@prefix exo1: <http://www.example.com/WS/exo1#> .
+@prefix fbbt: <http://purl.obolibrary.org/obo/fbbt#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix food: <http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#> .
+@prefix gene: <http://www.cs.umd.edu/projects/plus/DAML/onts/general1.0.daml#> .
+@prefix gnlp: <http://meredith.com/googlenlp-categories-ns#> .
+@prefix ical: <http://www.w3.org/2002/12/cal/ical#> .
+@prefix imdb: <http://www.imdb.com/> .
+@prefix link: <http://purl.org/rss/1.0/modules/link/> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix page: <http://dbpedia.org/page/> .
+@prefix pest: <https://www.farmland.org/pest#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rs2e: <http://www.cstb.fr/rs2e/raw> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix spif: <http://spinrdf.org/spif#> .
+@prefix spin: <http://spinrdf.org/spin#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix decil: <http://llivicuralimaulloa.co.nf/decil.owl/> .
+@prefix event: <http://www.people.usi.ch/fornaran/ontology/event#> .
+@prefix iiitb: <http://www.iiitb.com/ontologies/iiitb.owl#> .
+@prefix pizza: <http://www.co-ode.org/ontologies/pizza/pizza.owl#> .
+@prefix ppiot: <http://pdmaids.dibris.unige.it/PPIoT#> .
+@prefix prism: <http://prismstandard.org/namespaces/1.2/basic/> .
+@prefix quest: <http://obda.org/quest#> .
+@prefix resto: <http://example.org/restaurants#> .
+@prefix socce: <http://www.atl.lmco.com/projects/ontology/ontologies/basketball_soccer/soccer.daml#> .
+@prefix swrla: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix vcard: <http://nwalsh.com/rdf/vCard#> .
+@prefix xhtml: <http://www.w3.org/1999/xhtml> .
+@prefix xlink: <http://www.w3.org/1999/xlink> .
+@prefix AvionX: <http://uim.boeing.com/ent/cm_ce/uim/AvionX/> .
+@prefix hsapdv: <http://purl.obolibrary.org/obo/hsapdv#> .
+@prefix schema: <http://schema.org/> .
+@prefix centros: <http://llivicuralimaulloa.co.nf/centros.owl/> .
+@prefix codegen: <http://protege.org/code#> .
+@prefix dbpedia: <http://dbpedia.org/ontology/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl2xml: <http://www.w3.org/2006/12/owl2-xml#> .
+@prefix protege: <http://protege.stanford.edu/plugins/owl/protege#> .
+@prefix Internet: <http://www.LibrarySystem.com/ontologies/LMS.owl#Internet&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;> .
+@prefix metadata: <http://data.bioontology.org/metadata/> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix ontology: <http://dbpedia.org/ontology/> .
+@prefix Arpenteur: <http://www.arpenteur.org/ontology/Arpenteur.owl#> .
+@prefix Internet2: <http://www.LibrarySystem.com/ontologies/LMS.owl#Internet&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;> .
+@prefix economico: <http://example.com/> .
+@prefix DOLCE-Lite: <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#> .
+@prefix medical_lab: <http://www.semanticweb.org/biswaroop/ontologies/2019/2/medical_lab.owl#> .
+@prefix Cryptography: <http://www.LibrarySystem.com/ontologies/LMS.owl#Cryptography&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;> .
+@prefix DigitalMedia: <http://people.dsv.su.se/~dossis/ontologies/DigitalMedia.owl#> .
+@prefix Cryptography2: <http://www.LibrarySystem.com/ontologies/LMS.owl#Cryptography&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;> .
+@prefix movieontology: <http://www.movieontology.org/2009/10/01/movieontology.owl#> .
+@prefix movieontology2: <http://www.movieontology.org/2009/11/09/movieontology.owl#> .
+@prefix DataWarehousing: <http://www.LibrarySystem.com/ontologies/LMS.owl#DataWarehousing&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;> .
+@prefix DataWarehousing2: <http://www.LibrarySystem.com/ontologies/LMS.owl#DataWarehousing&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;> .
+@prefix untitled-ontology-18: <http://www.semanticweb.org/francois/ontologies/2019/2/untitled-ontology-18#> .
+@prefix untitled-ontology-39: <http://www.semanticweb.org/wagner_ma/ontologies/2019/1/untitled-ontology-39#> .
+@prefix untitled-ontology-44: <http://www.semanticweb.org/zdawood/ontologies/2018/6/untitled-ontology-44#> .
+@base <http://www.movieontology.org/2009/11/09/movieontology.owl> .
+
+<http://www.movieontology.org/2009/11/09/movieontology.owl> rdf:type owl:Ontology ;
+
+                                                            dc:date "20.01.2010"^^xsd:string ;
+
+                                                            dc:publisher "Amancio Bouza"^^xsd:string ;
+
+                                                            dc:creator "Amancio Bouza"^^xsd:string ;
+
+                                                            dc:contributor "Amancio Bouza"^^xsd:string ;
+
+                                                            dc:description "MO - Movie ontology"^^xsd:string ;
+
+                                                            owl:imports dbpedia: .
+
+
+#################################################################
+#
+#    Annotation properties
+#
+#################################################################
+
+
+###  http://purl.org/dc/elements/1.1/contributor
+
+dc:contributor rdf:type owl:AnnotationProperty .
+
+
+
+###  http://purl.org/dc/elements/1.1/creator
+
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+
+###  http://purl.org/dc/elements/1.1/date
+
+dc:date rdf:type owl:AnnotationProperty .
+
+
+
+###  http://purl.org/dc/elements/1.1/description
+
+dc:description rdf:type owl:AnnotationProperty .
+
+
+
+###  http://purl.org/dc/elements/1.1/publisher
+
+dc:publisher rdf:type owl:AnnotationProperty .
+
+
+
+
+
+#################################################################
+#
+#    Datatypes
+#
+#################################################################
+
+
+###  http://www.w3.org/2001/XMLSchema#date
+
+xsd:date rdf:type rdfs:Datatype .
+
+
+
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#belongsToGenre
+
+:belongsToGenre rdf:type owl:ObjectProperty ;
+
+                rdfs:range :Genre ;
+
+                rdfs:domain www:Movie .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#containsCountry
+
+:containsCountry rdf:type owl:ObjectProperty ;
+
+                 rdfs:range dbpedia:Country ;
+
+                 rdfs:domain :Territory .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#enablesConsumptionOf
+
+:enablesConsumptionOf rdf:type owl:ObjectProperty ;
+
+                      owl:inverseOf :isConsumableAs ;
+
+                      rdfs:range www:Movie ;
+
+                      rdfs:domain mo2:Consumable_Product .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#hasActor
+
+:hasActor rdf:type owl:ObjectProperty ;
+
+          rdfs:range dbpedia:Actor ;
+
+          owl:inverseOf :isActorIn ;
+
+          rdfs:domain www:Movie .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#hasActress
+
+:hasActress rdf:type owl:ObjectProperty ;
+
+            rdfs:subPropertyOf :hasActor ;
+
+            owl:propertyDisjointWith :hasMaleActor ;
+
+            owl:inverseOf :isActressIn ;
+
+            rdfs:domain www:Movie .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#hasColor
+
+:hasColor rdf:type owl:ObjectProperty ;
+
+          rdfs:range :Colorinfo ;
+
+          rdfs:domain www:Movie .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#hasComposer
+
+:hasComposer rdf:type owl:ObjectProperty ;
+
+             rdfs:range dbpedia:Musical_Artist ;
+
+             owl:inverseOf :isComposerIn ;
+
+             rdfs:domain www:Movie .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#hasCostumeDesigner
+
+:hasCostumeDesigner rdf:type owl:ObjectProperty ;
+
+                    rdfs:range :Costume_Designer ;
+
+                    owl:inverseOf :isCostumeDesignerIn ;
+
+                    rdfs:domain www:Movie .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#hasDirector
+
+:hasDirector rdf:type owl:ObjectProperty ;
+
+             rdfs:range page:Film_Director ;
+
+             rdfs:domain www:Movie .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#hasEditor
+
+:hasEditor rdf:type owl:ObjectProperty ;
+
+           rdfs:range :Editor ;
+
+           owl:inverseOf :isEditorIn ;
+
+           rdfs:domain www:Movie .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#hasFilmLocation
+
+:hasFilmLocation rdf:type owl:ObjectProperty ;
+
+                 rdfs:range page:Place ;
+
+                 rdfs:domain www:Movie .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#hasMaleActor
+
+:hasMaleActor rdf:type owl:ObjectProperty ;
+
+              rdfs:subPropertyOf :hasActor ;
+
+              rdfs:domain www:Movie .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#hasProducer
+
+:hasProducer rdf:type owl:ObjectProperty ;
+
+             rdfs:range :Producer ;
+
+             rdfs:domain www:Movie .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#hasReleasingCountry
+
+:hasReleasingCountry rdf:type owl:ObjectProperty ;
+
+                     rdfs:range dbpedia:Country ;
+
+                     owl:inverseOf :isReleasingCountryOf ;
+
+                     rdfs:domain www:Movie .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#hasSoundmix
+
+:hasSoundmix rdf:type owl:ObjectProperty ;
+
+             rdfs:range :Sound_Mix ;
+
+             rdfs:domain www:Movie .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#hasTranslatedMovie
+
+:hasTranslatedMovie rdf:type owl:ObjectProperty ;
+
+                    rdfs:domain dbpedia:Language ;
+
+                    rdfs:range www:Movie .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#isActorIn
+
+:isActorIn rdf:type owl:ObjectProperty ;
+
+           rdfs:domain dbpedia:Actor ;
+
+           rdfs:subPropertyOf :isActorIn ;
+
+           rdfs:range www:Movie .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#isActressIn
+
+:isActressIn rdf:type owl:ObjectProperty ;
+
+             rdfs:subPropertyOf :isActorIn ;
+
+             owl:propertyDisjointWith mo2:isMaleActorIn .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#isAwardedWith
+
+:isAwardedWith rdf:type owl:ObjectProperty ;
+
+               rdfs:range :Award ;
+
+               rdfs:domain www:Movie .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#isCertificationOf
+
+:isCertificationOf rdf:type owl:ObjectProperty ;
+
+                   rdfs:domain :Certification ;
+
+                   rdfs:range www:Movie .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#isCertifiedWith
+
+:isCertifiedWith rdf:type owl:ObjectProperty ;
+
+                 rdfs:range :Certification ;
+
+                 owl:inverseOf :isCertificationOf ;
+
+                 rdfs:domain www:Movie .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#isColorOf
+
+:isColorOf rdf:type owl:ObjectProperty ;
+
+           rdfs:domain :Colorinfo ;
+
+           owl:inverseOf :hasColor ;
+
+           rdfs:range www:Movie .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#isComposerIn
+
+:isComposerIn rdf:type owl:ObjectProperty ;
+
+              rdfs:domain dbpedia:Musical_Artist ;
+
+              rdfs:range www:Movie .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#isConsumableAs
+
+:isConsumableAs rdf:type owl:ObjectProperty ;
+
+                rdfs:domain www:Movie ;
+
+                rdfs:range mo2:Consumable_Product .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#isCostumeDesignerIn
+
+:isCostumeDesignerIn rdf:type owl:ObjectProperty ;
+
+                     rdfs:domain :Costume_Designer ;
+
+                     rdfs:range www:Movie .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#isDirectorOf
+
+:isDirectorOf rdf:type owl:ObjectProperty ;
+
+              rdfs:domain page:Film_Director ;
+
+              owl:inverseOf :hasDirector ;
+
+              rdfs:range www:Movie .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#isEditorIn
+
+:isEditorIn rdf:type owl:ObjectProperty ;
+
+            rdfs:domain :Editor ;
+
+            rdfs:range www:Movie .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#isFilmLocationOf
+
+:isFilmLocationOf rdf:type owl:ObjectProperty ;
+
+                  rdfs:domain page:Place ;
+
+                  owl:inverseOf :hasFilmLocation ;
+
+                  rdfs:range www:Movie .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#isGenreOf
+
+:isGenreOf rdf:type owl:ObjectProperty ;
+
+           owl:inverseOf :belongsToGenre .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#isProducedBy
+
+:isProducedBy rdf:type owl:ObjectProperty ;
+
+              rdfs:range :Production_Company ;
+
+              owl:inverseOf :produced ;
+
+              rdfs:domain www:Movie .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#isReleasingCountryOf
+
+:isReleasingCountryOf rdf:type owl:ObjectProperty ;
+
+                      rdfs:domain dbpedia:Country ;
+
+                      rdfs:range www:Movie .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#isSoundmixOf
+
+:isSoundmixOf rdf:type owl:ObjectProperty ;
+
+              rdfs:domain :Sound_Mix ;
+
+              owl:inverseOf :hasSoundmix ;
+
+              rdfs:range www:Movie .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#isTranslatedTo
+
+:isTranslatedTo rdf:type owl:ObjectProperty ;
+
+                rdfs:range dbpedia:Language ;
+
+                owl:inverseOf :hasTranslatedMovie ;
+
+                rdfs:domain www:Movie .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#nominatedFor
+
+:nominatedFor rdf:type owl:ObjectProperty ;
+
+              rdfs:range :Award ;
+
+              rdfs:domain www:Movie .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#partOfTerritory
+
+:partOfTerritory rdf:type owl:ObjectProperty ;
+
+                 rdfs:domain dbpedia:Country ;
+
+                 rdfs:range :Territory .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#produced
+
+:produced rdf:type owl:ObjectProperty ;
+
+          rdfs:domain :Production_Company ;
+
+          rdfs:range www:Movie .
+
+
+
+###  http://www.movieontology.org/2009/11/09/movieontology.owl#isAwardOf
+
+mo2:isAwardOf rdf:type owl:ObjectProperty ;
+
+              rdfs:domain :Award ;
+
+              owl:inverseOf :isAwardedWith ;
+
+              rdfs:range www:Movie .
+
+
+
+###  http://www.movieontology.org/2009/11/09/movieontology.owl#isMaleActorIn
+
+mo2:isMaleActorIn rdf:type owl:ObjectProperty ;
+
+                  owl:inverseOf :hasMaleActor ;
+
+                  rdfs:subPropertyOf :isActorIn .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#imdbrating
+
+:imdbrating rdf:type owl:DatatypeProperty ,
+                     owl:FunctionalProperty ;
+
+            rdfs:domain www:Movie ;
+
+            rdfs:range xsd:double .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#releasedate
+
+:releasedate rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
+
+             rdfs:domain www:Movie ;
+
+             rdfs:range xsd:date .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#runtime
+
+:runtime rdf:type owl:DatatypeProperty ,
+                  owl:FunctionalProperty ;
+
+         rdfs:domain www:Movie ;
+
+         rdfs:range xsd:int .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#title
+
+:title rdf:type owl:DatatypeProperty ;
+
+       rdfs:domain www:Movie ;
+
+       rdfs:range xsd:string .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://dbpedia.org/ontology/Actor
+
+dbpedia:Actor rdf:type owl:Class ;
+
+              rdfs:subClassOf dbpedia:Person .
+
+
+
+###  http://dbpedia.org/ontology/Country
+
+dbpedia:Country rdf:type owl:Class .
+
+
+
+###  http://dbpedia.org/ontology/Language
+
+dbpedia:Language rdf:type owl:Class ;
+
+                 rdfs:subClassOf :Presentation .
+
+
+
+###  http://dbpedia.org/ontology/Musical_Artist
+
+dbpedia:Musical_Artist rdf:type owl:Class ;
+
+                       rdfs:subClassOf dbpedia:Person .
+
+
+
+###  http://dbpedia.org/ontology/Person
+
+dbpedia:Person rdf:type owl:Class .
+
+
+
+###  http://dbpedia.org/ontology/Writer
+
+dbpedia:Writer rdf:type owl:Class ;
+
+               rdfs:subClassOf dbpedia:Person .
+
+
+
+###  http://dbpedia.org/page/Film_Director
+
+page:Film_Director rdf:type owl:Class ;
+
+                   rdfs:subClassOf dbpedia:Person .
+
+
+
+###  http://dbpedia.org/page/Place
+
+page:Place rdf:type owl:Class .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Actionreach
+
+:Actionreach rdf:type owl:Class ;
+
+             rdfs:subClassOf :Entertainment .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Africa
+
+:Africa rdf:type owl:Class ;
+
+        rdfs:subClassOf :Territory .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#America
+
+:America rdf:type owl:Class ;
+
+         rdfs:subClassOf :Territory .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Asia
+
+:Asia rdf:type owl:Class ;
+
+      rdfs:subClassOf :Territory .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Australia_and_New_Zealand
+
+:Australia_and_New_Zealand rdf:type owl:Class ;
+
+                           rdfs:subClassOf :Oceania .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Award
+
+:Award rdf:type owl:Class .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Brute_Action
+
+:Brute_Action rdf:type owl:Class ;
+
+              rdfs:subClassOf :Actionreach .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Caribbean
+
+:Caribbean rdf:type owl:Class ;
+
+           rdfs:subClassOf :America .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Central_America
+
+:Central_America rdf:type owl:Class ;
+
+                 rdfs:subClassOf :LatinAmerica ;
+
+                 owl:disjointWith :South_America .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Central_Asia
+
+:Central_Asia rdf:type owl:Class ;
+
+              rdfs:subClassOf :Asia .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Certification
+
+:Certification rdf:type owl:Class .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Colorinfo
+
+:Colorinfo rdf:type owl:Class ;
+
+           rdfs:subClassOf :Presentation .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Costume_Designer
+
+:Costume_Designer rdf:type owl:Class ;
+
+                  rdfs:subClassOf dbpedia:Person .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Documentarial_Information
+
+:Documentarial_Information rdf:type owl:Class ;
+
+                           rdfs:subClassOf :Special-Info .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Eastern_Africa
+
+:Eastern_Africa rdf:type owl:Class ;
+
+                rdfs:subClassOf :Africa .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Eastern_Asia
+
+:Eastern_Asia rdf:type owl:Class ;
+
+              rdfs:subClassOf :Asia .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Eastern_Europe
+
+:Eastern_Europe rdf:type owl:Class ;
+
+                rdfs:subClassOf :Europe .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Editor
+
+:Editor rdf:type owl:Class ;
+
+        rdfs:subClassOf dbpedia:Person .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Entertaining_Information
+
+:Entertaining_Information rdf:type owl:Class ;
+
+                          rdfs:subClassOf :Entertainment .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Entertainment
+
+:Entertainment rdf:type owl:Class ;
+
+               rdfs:subClassOf :Genre .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Europe
+
+:Europe rdf:type owl:Class ;
+
+        rdfs:subClassOf :Territory .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Experience
+
+:Experience rdf:type owl:Class ;
+
+            rdfs:subClassOf :Entertainment .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Fast-Info
+
+:Fast-Info rdf:type owl:Class ;
+
+           rdfs:subClassOf :Information .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Fun
+
+:Fun rdf:type owl:Class ;
+
+     rdfs:subClassOf :SocialActive .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Genre
+
+:Genre rdf:type owl:Class .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Heavy_Sensible
+
+:Heavy_Sensible rdf:type owl:Class ;
+
+                rdfs:subClassOf :Sensible .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Historical_Information
+
+:Historical_Information rdf:type owl:Class ;
+
+                        rdfs:subClassOf :Documentarial_Information .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Imaginational_Entertainment
+
+:Imaginational_Entertainment rdf:type owl:Class ;
+
+                             rdfs:subClassOf :Entertainment .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Info-TV
+
+:Info-TV rdf:type owl:Class ;
+
+         rdfs:subClassOf :Fast-Info .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Information
+
+:Information rdf:type owl:Class ;
+
+             rdfs:subClassOf :Genre .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Intelectual_Entertainment
+
+:Intelectual_Entertainment rdf:type owl:Class ;
+
+                           rdfs:subClassOf :Experience .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Kids
+
+:Kids rdf:type owl:Class ;
+
+      rdfs:subClassOf :SocialActive .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#LatinAmerica
+
+:LatinAmerica rdf:type owl:Class ;
+
+              rdfs:subClassOf :America .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Logical_Thrilling
+
+:Logical_Thrilling rdf:type owl:Class ;
+
+                   rdfs:subClassOf :Thrilling .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Love
+
+:Love rdf:type owl:Class ;
+
+      rdfs:subClassOf :Sensible .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Melanesia
+
+:Melanesia rdf:type owl:Class ;
+
+           rdfs:subClassOf :Oceania .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Micronesia
+
+:Micronesia rdf:type owl:Class ;
+
+            rdfs:subClassOf :Oceania .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Middle_Africa
+
+:Middle_Africa rdf:type owl:Class ;
+
+               rdfs:subClassOf :Africa .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Musical_Entertainment
+
+:Musical_Entertainment rdf:type owl:Class ;
+
+                       rdfs:subClassOf :Intelectual_Entertainment .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Northern_Africa
+
+:Northern_Africa rdf:type owl:Class ;
+
+                 rdfs:subClassOf :Africa .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Northern_America
+
+:Northern_America rdf:type owl:Class ;
+
+                  rdfs:subClassOf :America .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Northern_Europe
+
+:Northern_Europe rdf:type owl:Class ;
+
+                 rdfs:subClassOf :Europe .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Oceania
+
+:Oceania rdf:type owl:Class ;
+
+         rdfs:subClassOf :Territory .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Old_Action
+
+:Old_Action rdf:type owl:Class ;
+
+            rdfs:subClassOf :Actionreach .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Online_retailer
+
+:Online_retailer rdf:type owl:Class .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Polynesia
+
+:Polynesia rdf:type owl:Class ;
+
+           rdfs:subClassOf :Oceania .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Porn
+
+:Porn rdf:type owl:Class ;
+
+      rdfs:subClassOf :Experience .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Presentation
+
+:Presentation rdf:type owl:Class .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Producer
+
+:Producer rdf:type owl:Class ;
+
+          rdfs:subClassOf dbpedia:Person .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Production_Company
+
+:Production_Company rdf:type owl:Class .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#SciFi_and_Fantasy
+
+:SciFi_and_Fantasy rdf:type owl:Class ;
+
+                   rdfs:subClassOf :Imaginational_Entertainment .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Sensible
+
+:Sensible rdf:type owl:Class ;
+
+          rdfs:subClassOf :Entertainment .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Sensible_Thrilling
+
+:Sensible_Thrilling rdf:type owl:Class ;
+
+                    rdfs:subClassOf :Thrilling .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#SocialActive
+
+:SocialActive rdf:type owl:Class ;
+
+              rdfs:subClassOf :Entertainment .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Sound_Mix
+
+:Sound_Mix rdf:type owl:Class ;
+
+           rdfs:subClassOf :Presentation .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#South_America
+
+:South_America rdf:type owl:Class ;
+
+               rdfs:subClassOf :LatinAmerica .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Southeastern_Asia
+
+:Southeastern_Asia rdf:type owl:Class ;
+
+                   rdfs:subClassOf :Asia .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Southern_Africa
+
+:Southern_Africa rdf:type owl:Class ;
+
+                 rdfs:subClassOf :Africa .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Southern_Asia
+
+:Southern_Asia rdf:type owl:Class ;
+
+               rdfs:subClassOf :Asia .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Southern_Europe
+
+:Southern_Europe rdf:type owl:Class ;
+
+                 rdfs:subClassOf :Europe .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Special-Info
+
+:Special-Info rdf:type owl:Class ;
+
+              rdfs:subClassOf :Information .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#TV-Entertainment
+
+:TV-Entertainment rdf:type owl:Class ;
+
+                  rdfs:subClassOf :Experience .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Territory
+
+:Territory rdf:type owl:Class .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Thrilling
+
+:Thrilling rdf:type owl:Class ;
+
+           rdfs:subClassOf :Imaginational_Entertainment .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Western_Africa
+
+:Western_Africa rdf:type owl:Class ;
+
+                rdfs:subClassOf :Africa .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Western_Asia
+
+:Western_Asia rdf:type owl:Class ;
+
+              rdfs:subClassOf :Asia .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Western_Europe
+
+:Western_Europe rdf:type owl:Class ;
+
+                rdfs:subClassOf :Europe .
+
+
+
+###  http://www.movieontology.org/2009/11/09/Movie
+
+www:Movie rdf:type owl:Class .
+
+
+
+###  http://www.movieontology.org/2009/11/09/movieontology.owl#Consumable_Product
+
+mo2:Consumable_Product rdf:type owl:Class .
+
+
+
+###  http://www.w3.org/2002/07/owl#Thing
+
+owl:Thing rdf:type owl:Class .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Action
+
+:Action rdf:type :Brute_Action ,
+                 owl:NamedIndividual ,
+                 owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Adult
+
+:Adult rdf:type :Porn ,
+                owl:NamedIndividual ,
+                owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Adventure
+
+:Adventure rdf:type :Actionreach ,
+                    :Imaginational_Entertainment ,
+                    owl:NamedIndividual ,
+                    owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Afghanistan
+
+:Afghanistan rdf:type :Southern_Asia ,
+                      owl:NamedIndividual ,
+                      owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Aland_Islands
+
+:Aland_Islands rdf:type :Northern_Europe ,
+                        owl:NamedIndividual ,
+                        owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Albania
+
+:Albania rdf:type :Southern_Europe ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Algeria
+
+:Algeria rdf:type :Northern_Africa ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Amazon.com_retailer
+
+:Amazon.com_retailer rdf:type :Online_retailer ,
+                              owl:NamedIndividual ,
+                              owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#American_Samoa
+
+:American_Samoa rdf:type :Polynesia ,
+                         owl:NamedIndividual ,
+                         owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Andorra
+
+:Andorra rdf:type :Southern_Europe ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Angola
+
+:Angola rdf:type :Middle_Africa ,
+                 owl:NamedIndividual ,
+                 owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Anguilla
+
+:Anguilla rdf:type :Caribbean ,
+                   owl:NamedIndividual ,
+                   owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Animation
+
+:Animation rdf:type :Fun ,
+                    owl:NamedIndividual ,
+                    owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Antigua_and_Barbuda
+
+:Antigua_and_Barbuda rdf:type :Caribbean ,
+                              owl:NamedIndividual ,
+                              owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Argentina
+
+:Argentina rdf:type :South_America ,
+                    owl:NamedIndividual ,
+                    owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Armenia
+
+:Armenia rdf:type :Western_Asia ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Aruba
+
+:Aruba rdf:type :Caribbean ,
+                owl:NamedIndividual ,
+                owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Australia
+
+:Australia rdf:type :Australia_and_New_Zealand ,
+                    owl:NamedIndividual ,
+                    owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Austria
+
+:Austria rdf:type :Western_Europe ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Azerbaijan
+
+:Azerbaijan rdf:type :Western_Asia ,
+                     owl:NamedIndividual ,
+                     owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#BAFTA_Film_Award
+
+:BAFTA_Film_Award rdf:type :Award ,
+                           owl:NamedIndividual ,
+                           owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Bahamas
+
+:Bahamas rdf:type :Caribbean ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Bahrain
+
+:Bahrain rdf:type :Western_Asia ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Bangladesh
+
+:Bangladesh rdf:type :Southern_Asia ,
+                     owl:NamedIndividual ,
+                     owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Barbados
+
+:Barbados rdf:type :Caribbean ,
+                   owl:NamedIndividual ,
+                   owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Belarus
+
+:Belarus rdf:type :Eastern_Europe ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Belgium
+
+:Belgium rdf:type :Western_Europe ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Belize
+
+:Belize rdf:type :Central_America ,
+                 owl:NamedIndividual ,
+                 owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Benin
+
+:Benin rdf:type :Western_Africa ,
+                owl:NamedIndividual ,
+                owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Bermuda
+
+:Bermuda rdf:type :Northern_America ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Bhutan
+
+:Bhutan rdf:type :Southern_Asia ,
+                 owl:NamedIndividual ,
+                 owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Biography
+
+:Biography rdf:type :Documentarial_Information ,
+                    owl:NamedIndividual ,
+                    owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Black_and_White
+
+:Black_and_White rdf:type :Colorinfo ,
+                          owl:NamedIndividual ,
+                          owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Blockbuster.com_retailer
+
+:Blockbuster.com_retailer rdf:type :Online_retailer ,
+                                   owl:NamedIndividual ,
+                                   owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Bolivia
+
+:Bolivia rdf:type :South_America ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Bosnia-Herzegovina
+
+:Bosnia-Herzegovina rdf:type :Southern_Europe ,
+                             owl:NamedIndividual ,
+                             owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Botswana
+
+:Botswana rdf:type :Southern_Africa ,
+                   owl:NamedIndividual ,
+                   owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Brazil
+
+:Brazil rdf:type :South_America ,
+                 owl:NamedIndividual ,
+                 owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#British_Virgin_Islands
+
+:British_Virgin_Islands rdf:type :Caribbean ,
+                                 owl:NamedIndividual ,
+                                 owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Brunei_Darussalam
+
+:Brunei_Darussalam rdf:type :Southeastern_Asia ,
+                            owl:NamedIndividual ,
+                            owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Bulgaria
+
+:Bulgaria rdf:type :Eastern_Europe ,
+                   owl:NamedIndividual ,
+                   owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Burkina_Faso
+
+:Burkina_Faso rdf:type :Western_Africa ,
+                       owl:NamedIndividual ,
+                       owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Burma
+
+:Burma rdf:type :Southern_Asia ,
+                owl:NamedIndividual ,
+                owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Burundi
+
+:Burundi rdf:type :Eastern_Africa ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Cambodia
+
+:Cambodia rdf:type :Southeastern_Asia ,
+                   owl:NamedIndividual ,
+                   owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Cameroon
+
+:Cameroon rdf:type :Middle_Africa ,
+                   owl:NamedIndividual ,
+                   owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Canada
+
+:Canada rdf:type :Northern_America ,
+                 owl:NamedIndividual ,
+                 owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Cape_Verde
+
+:Cape_Verde rdf:type :Western_Africa ,
+                     owl:NamedIndividual ,
+                     owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Cayman_Islands
+
+:Cayman_Islands rdf:type :Caribbean ,
+                         owl:NamedIndividual ,
+                         owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Central_African_Republic
+
+:Central_African_Republic rdf:type :Middle_Africa ,
+                                   owl:NamedIndividual ,
+                                   owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Chad
+
+:Chad rdf:type :Middle_Africa ,
+               owl:NamedIndividual ,
+               owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Channel_Islands
+
+:Channel_Islands rdf:type :Northern_Europe ,
+                          owl:NamedIndividual ,
+                          owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Chile
+
+:Chile rdf:type :South_America ,
+                owl:NamedIndividual ,
+                owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#China
+
+:China rdf:type :Eastern_Asia ,
+                owl:NamedIndividual ,
+                owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Colombia
+
+:Colombia rdf:type :South_America ,
+                   owl:NamedIndividual ,
+                   owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Color
+
+:Color rdf:type :Colorinfo ,
+                owl:NamedIndividual ,
+                owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Comedy
+
+:Comedy rdf:type :Fun ,
+                 owl:NamedIndividual ,
+                 owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Comoros
+
+:Comoros rdf:type :Eastern_Africa ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Congo
+
+:Congo rdf:type :Middle_Africa ,
+                owl:NamedIndividual ,
+                owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Cook_Islands
+
+:Cook_Islands rdf:type :Polynesia ,
+                       owl:NamedIndividual ,
+                       owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Costa_Rica
+
+:Costa_Rica rdf:type :Central_America ,
+                     owl:NamedIndividual ,
+                     owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Crime
+
+:Crime rdf:type :Logical_Thrilling ,
+                owl:NamedIndividual ,
+                owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Croatia
+
+:Croatia rdf:type :Southern_Europe ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Cuba
+
+:Cuba rdf:type :Caribbean ,
+               owl:NamedIndividual ,
+               owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Cyprus
+
+:Cyprus rdf:type :Western_Asia ,
+                 owl:NamedIndividual ,
+                 owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Czech_Republic
+
+:Czech_Republic rdf:type :Eastern_Europe ,
+                         owl:NamedIndividual ,
+                         owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Denmark
+
+:Denmark rdf:type :Northern_Europe ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Djibouti
+
+:Djibouti rdf:type :Eastern_Africa ,
+                   owl:NamedIndividual ,
+                   owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Documentary
+
+:Documentary rdf:type :Documentarial_Information ,
+                      owl:NamedIndividual ,
+                      owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Dominica
+
+:Dominica rdf:type :Caribbean ,
+                   owl:NamedIndividual ,
+                   owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Dominican_Republic
+
+:Dominican_Republic rdf:type :Caribbean ,
+                             owl:NamedIndividual ,
+                             owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Drama
+
+:Drama rdf:type :Heavy_Sensible ,
+                owl:NamedIndividual ,
+                owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Ecuador
+
+:Ecuador rdf:type :South_America ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Egypt
+
+:Egypt rdf:type :Northern_Africa ,
+                owl:NamedIndividual ,
+                owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#El_Salvador
+
+:El_Salvador rdf:type :Central_America ,
+                      owl:NamedIndividual ,
+                      owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Equatorial_Guinea
+
+:Equatorial_Guinea rdf:type :Middle_Africa ,
+                            owl:NamedIndividual ,
+                            owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Eritrea
+
+:Eritrea rdf:type :Eastern_Africa ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Estonia
+
+:Estonia rdf:type :Northern_Europe ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Ethiopia
+
+:Ethiopia rdf:type :Eastern_Africa ,
+                   owl:NamedIndividual ,
+                   owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Falkland_Islands
+
+:Falkland_Islands rdf:type :South_America ,
+                           owl:NamedIndividual ,
+                           owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Family
+
+:Family rdf:type :Kids ,
+                 owl:NamedIndividual ,
+                 owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Fantasy
+
+:Fantasy rdf:type :SciFi_and_Fantasy ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Faroe_Islands
+
+:Faroe_Islands rdf:type :Northern_Europe ,
+                        owl:NamedIndividual ,
+                        owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Federated_States_of_Micronesia
+
+:Federated_States_of_Micronesia rdf:type :Micronesia ,
+                                         owl:NamedIndividual ,
+                                         owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Fiji
+
+:Fiji rdf:type :Melanesia ,
+               owl:NamedIndividual ,
+               owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Film-Noir
+
+:Film-Noir rdf:type :Heavy_Sensible ,
+                    owl:NamedIndividual ,
+                    owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Finland
+
+:Finland rdf:type :Northern_Europe ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#France
+
+:France rdf:type :Western_Europe ,
+                 owl:NamedIndividual ,
+                 owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#French_Guiana
+
+:French_Guiana rdf:type :South_America ,
+                        owl:NamedIndividual ,
+                        owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#French_Polynesia
+
+:French_Polynesia rdf:type :Polynesia ,
+                           owl:NamedIndividual ,
+                           owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Gabon
+
+:Gabon rdf:type :Middle_Africa ,
+                owl:NamedIndividual ,
+                owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Gambia
+
+:Gambia rdf:type :Western_Africa ,
+                 owl:NamedIndividual ,
+                 owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Game-Show
+
+:Game-Show rdf:type :TV-Entertainment ,
+                    owl:NamedIndividual ,
+                    owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Georgia
+
+:Georgia rdf:type :Western_Asia ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Germany
+
+:Germany rdf:type :Western_Europe ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Ghana
+
+:Ghana rdf:type :Western_Africa ,
+                owl:NamedIndividual ,
+                owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Gibraltar
+
+:Gibraltar rdf:type :Southern_Europe ,
+                    owl:NamedIndividual ,
+                    owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Golden_Globe_Award
+
+:Golden_Globe_Award rdf:type :Award ,
+                             owl:NamedIndividual ,
+                             owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Greece
+
+:Greece rdf:type :Southern_Europe ,
+                 owl:NamedIndividual ,
+                 owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Greenland
+
+:Greenland rdf:type :Northern_America ,
+                    owl:NamedIndividual ,
+                    owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Grenada
+
+:Grenada rdf:type :Caribbean ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Guadeloupe
+
+:Guadeloupe rdf:type :Caribbean ,
+                     owl:NamedIndividual ,
+                     owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Guam
+
+:Guam rdf:type :Micronesia ,
+               owl:NamedIndividual ,
+               owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Guatemala
+
+:Guatemala rdf:type :Central_America ,
+                    owl:NamedIndividual ,
+                    owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Guernesey
+
+:Guernesey rdf:type :Northern_Europe ,
+                    owl:NamedIndividual ,
+                    owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Guinea
+
+:Guinea rdf:type :Western_Africa ,
+                 owl:NamedIndividual ,
+                 owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Guinea-Bassau
+
+:Guinea-Bassau rdf:type :Western_Africa ,
+                        owl:NamedIndividual ,
+                        owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Guyana
+
+:Guyana rdf:type :South_America ,
+                 owl:NamedIndividual ,
+                 owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Haiti
+
+:Haiti rdf:type :Caribbean ,
+                owl:NamedIndividual ,
+                owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#History
+
+:History rdf:type :Historical_Information ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Holy_See
+
+:Holy_See rdf:type :Southern_Europe ,
+                   owl:NamedIndividual ,
+                   owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Honduras
+
+:Honduras rdf:type :Central_America ,
+                   owl:NamedIndividual ,
+                   owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Hong_Kong
+
+:Hong_Kong rdf:type :Eastern_Asia ,
+                    owl:NamedIndividual ,
+                    owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Horror
+
+:Horror rdf:type :Thrilling ,
+                 owl:NamedIndividual ,
+                 owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Hungary
+
+:Hungary rdf:type :Eastern_Europe ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Iceland
+
+:Iceland rdf:type :Northern_Europe ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#India
+
+:India rdf:type :Southern_Asia ,
+                owl:NamedIndividual ,
+                owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Indonesia
+
+:Indonesia rdf:type :Southeastern_Asia ,
+                    owl:NamedIndividual ,
+                    owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Iran
+
+:Iran rdf:type :Southern_Asia ,
+               owl:NamedIndividual ,
+               owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Iraq
+
+:Iraq rdf:type :Western_Asia ,
+               owl:NamedIndividual ,
+               owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Ireland
+
+:Ireland rdf:type :Northern_Europe ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Isle_of_Man
+
+:Isle_of_Man rdf:type :Northern_Europe ,
+                      owl:NamedIndividual ,
+                      owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Israel
+
+:Israel rdf:type :Western_Asia ,
+                 owl:NamedIndividual ,
+                 owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Italy
+
+:Italy rdf:type :Southern_Europe ,
+                owl:NamedIndividual ,
+                owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Ivory_Coast
+
+:Ivory_Coast rdf:type :Western_Africa ,
+                      owl:NamedIndividual ,
+                      owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Jamaica
+
+:Jamaica rdf:type :Caribbean ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Japan
+
+:Japan rdf:type :Eastern_Asia ,
+                owl:NamedIndividual ,
+                owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Jersey
+
+:Jersey rdf:type :Northern_Europe ,
+                 owl:NamedIndividual ,
+                 owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Jordan
+
+:Jordan rdf:type :Western_Asia ,
+                 owl:NamedIndividual ,
+                 owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Kazakhstan
+
+:Kazakhstan rdf:type :Central_Asia ,
+                     owl:NamedIndividual ,
+                     owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Kenya
+
+:Kenya rdf:type :Eastern_Africa ,
+                owl:NamedIndividual ,
+                owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Kiribati
+
+:Kiribati rdf:type :Micronesia ,
+                   owl:NamedIndividual ,
+                   owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Kuwait
+
+:Kuwait rdf:type :Western_Asia ,
+                 owl:NamedIndividual ,
+                 owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Kyrgyzstan
+
+:Kyrgyzstan rdf:type :Central_Asia ,
+                     owl:NamedIndividual ,
+                     owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Laos
+
+:Laos rdf:type :Southeastern_Asia ,
+               owl:NamedIndividual ,
+               owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Latvia
+
+:Latvia rdf:type :Northern_Europe ,
+                 owl:NamedIndividual ,
+                 owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Lebanon
+
+:Lebanon rdf:type :Western_Asia ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Lesotho
+
+:Lesotho rdf:type :Southern_Africa ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Liberia
+
+:Liberia rdf:type :Western_Africa ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Libya
+
+:Libya rdf:type :Northern_Africa ,
+                owl:NamedIndividual ,
+                owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Liechtenstein
+
+:Liechtenstein rdf:type :Western_Europe ,
+                        owl:NamedIndividual ,
+                        owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Lithuania
+
+:Lithuania rdf:type :Northern_Europe ,
+                    owl:NamedIndividual ,
+                    owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Luxembourg
+
+:Luxembourg rdf:type :Western_Europe ,
+                     owl:NamedIndividual ,
+                     owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Macao
+
+:Macao rdf:type :Eastern_Asia ,
+                owl:NamedIndividual ,
+                owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Madagascar
+
+:Madagascar rdf:type :Eastern_Africa ,
+                     owl:NamedIndividual ,
+                     owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Malawi
+
+:Malawi rdf:type :Eastern_Africa ,
+                 owl:NamedIndividual ,
+                 owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Malaysia
+
+:Malaysia rdf:type :Southeastern_Asia ,
+                   owl:NamedIndividual ,
+                   owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Maldives
+
+:Maldives rdf:type :Southern_Asia ,
+                   owl:NamedIndividual ,
+                   owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Mali
+
+:Mali rdf:type :Western_Africa ,
+               owl:NamedIndividual ,
+               owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Malta
+
+:Malta rdf:type :Southern_Europe ,
+                owl:NamedIndividual ,
+                owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Marshal_lIsland
+
+:Marshal_lIsland rdf:type :Micronesia ,
+                          owl:NamedIndividual ,
+                          owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Martinique
+
+:Martinique rdf:type :Caribbean ,
+                     owl:NamedIndividual ,
+                     owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Mauritania
+
+:Mauritania rdf:type :Western_Africa ,
+                     owl:NamedIndividual ,
+                     owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Mauritius
+
+:Mauritius rdf:type :Eastern_Africa ,
+                    owl:NamedIndividual ,
+                    owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Mayotte
+
+:Mayotte rdf:type :Eastern_Africa ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Mexico
+
+:Mexico rdf:type :Central_America ,
+                 owl:NamedIndividual ,
+                 owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Miscellaneous_Award
+
+:Miscellaneous_Award rdf:type :Award ,
+                              owl:NamedIndividual ,
+                              owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Moldova
+
+:Moldova rdf:type :Eastern_Europe ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Monaco
+
+:Monaco rdf:type :Western_Europe ,
+                 owl:NamedIndividual ,
+                 owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Mongolia
+
+:Mongolia rdf:type :Eastern_Asia ,
+                   owl:NamedIndividual ,
+                   owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Montenegro
+
+:Montenegro rdf:type :Southern_Europe ,
+                     owl:NamedIndividual ,
+                     owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Montserrat
+
+:Montserrat rdf:type :Caribbean ,
+                     owl:NamedIndividual ,
+                     owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Morocco
+
+:Morocco rdf:type :Northern_Africa ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Mozambique
+
+:Mozambique rdf:type :Eastern_Africa ,
+                     owl:NamedIndividual ,
+                     owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Music
+
+:Music rdf:type :Musical_Entertainment ,
+                owl:NamedIndividual ,
+                owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Musical
+
+:Musical rdf:type :Musical_Entertainment ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Myanmar
+
+:Myanmar rdf:type :Southeastern_Asia ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Mystery
+
+:Mystery rdf:type :Sensible_Thrilling ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Namibia
+
+:Namibia rdf:type :Southern_Africa ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Nauru
+
+:Nauru rdf:type :Micronesia ,
+                owl:NamedIndividual ,
+                owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Nepal
+
+:Nepal rdf:type :Southern_Asia ,
+                owl:NamedIndividual ,
+                owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Netflix.com_retailer
+
+:Netflix.com_retailer rdf:type :Online_retailer ,
+                               owl:NamedIndividual ,
+                               owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Netherlands
+
+:Netherlands rdf:type :Western_Europe ,
+                      owl:NamedIndividual ,
+                      owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Netherlands_Antilles
+
+:Netherlands_Antilles rdf:type :Caribbean ,
+                               owl:NamedIndividual ,
+                               owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#New_Caledonia
+
+:New_Caledonia rdf:type :Melanesia ,
+                        owl:NamedIndividual ,
+                        owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#New_Zealand
+
+:New_Zealand rdf:type :Australia_and_New_Zealand ,
+                      owl:NamedIndividual ,
+                      owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#News
+
+:News rdf:type :Info-TV ,
+               owl:NamedIndividual ,
+               owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Nicaragua
+
+:Nicaragua rdf:type :Central_America ,
+                    owl:NamedIndividual ,
+                    owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Niger
+
+:Niger rdf:type :Western_Africa ,
+                owl:NamedIndividual ,
+                owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Nigeria
+
+:Nigeria rdf:type :Western_Africa ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Niue
+
+:Niue rdf:type :Polynesia ,
+               owl:NamedIndividual ,
+               owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Norfolk_Island
+
+:Norfolk_Island rdf:type :Australia_and_New_Zealand ,
+                         owl:NamedIndividual ,
+                         owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#North_Korea
+
+:North_Korea rdf:type :Eastern_Asia ,
+                      owl:NamedIndividual ,
+                      owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Northern_Mariana_Islands
+
+:Northern_Mariana_Islands rdf:type :Micronesia ,
+                                   owl:NamedIndividual ,
+                                   owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Norway
+
+:Norway rdf:type :Northern_Europe ,
+                 owl:NamedIndividual ,
+                 owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Oman
+
+:Oman rdf:type :Western_Asia ,
+               owl:NamedIndividual ,
+               owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Oscar_Award
+
+:Oscar_Award rdf:type :Award ,
+                      owl:NamedIndividual ,
+                      owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Pakistan
+
+:Pakistan rdf:type :Southern_Asia ,
+                   owl:NamedIndividual ,
+                   owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Palau
+
+:Palau rdf:type :Micronesia ,
+                owl:NamedIndividual ,
+                owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Palestine
+
+:Palestine rdf:type :Western_Asia ,
+                    owl:NamedIndividual ,
+                    owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Panama
+
+:Panama rdf:type :Central_America ,
+                 owl:NamedIndividual ,
+                 owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Papua_New_Guinea
+
+:Papua_New_Guinea rdf:type :Melanesia ,
+                           owl:NamedIndividual ,
+                           owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Paraguay
+
+:Paraguay rdf:type :South_America ,
+                   owl:NamedIndividual ,
+                   owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Peru
+
+:Peru rdf:type :South_America ,
+               owl:NamedIndividual ,
+               owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Philippines
+
+:Philippines rdf:type :Southeastern_Asia ,
+                      owl:NamedIndividual ,
+                      owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Pitcairn
+
+:Pitcairn rdf:type :Polynesia ,
+                   owl:NamedIndividual ,
+                   owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Poland
+
+:Poland rdf:type :Eastern_Europe ,
+                 owl:NamedIndividual ,
+                 owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Portugal
+
+:Portugal rdf:type :Southern_Europe ,
+                   owl:NamedIndividual ,
+                   owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Primetime_Emmy_Award
+
+:Primetime_Emmy_Award rdf:type :Award ,
+                               owl:NamedIndividual ,
+                               owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Puerto_Rico
+
+:Puerto_Rico rdf:type :Caribbean ,
+                      owl:NamedIndividual ,
+                      owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Qatar
+
+:Qatar rdf:type :Western_Asia ,
+                owl:NamedIndividual ,
+                owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Reality-TV
+
+:Reality-TV rdf:type :TV-Entertainment ,
+                     owl:NamedIndividual ,
+                     owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Republic_of_Macedonia
+
+:Republic_of_Macedonia rdf:type :Southern_Europe ,
+                                owl:NamedIndividual ,
+                                owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Reunion
+
+:Reunion rdf:type :Eastern_Africa ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Romance
+
+:Romance rdf:type :Love ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Romania
+
+:Romania rdf:type :Eastern_Europe ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#RottenTomatoes.com_retailer
+
+:RottenTomatoes.com_retailer rdf:type :Online_retailer ,
+                                      owl:NamedIndividual ,
+                                      owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Russia
+
+:Russia rdf:type :Eastern_Europe ,
+                 owl:NamedIndividual ,
+                 owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#RussiaAsia
+
+:RussiaAsia rdf:type :Asia ,
+                     owl:NamedIndividual ,
+                     owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Rwanda
+
+:Rwanda rdf:type :Eastern_Africa ,
+                 owl:NamedIndividual ,
+                 owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Saint-Barthelemy
+
+:Saint-Barthelemy rdf:type :Caribbean ,
+                           owl:NamedIndividual ,
+                           owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Saint_Helena
+
+:Saint_Helena rdf:type :Western_Africa ,
+                       owl:NamedIndividual ,
+                       owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Saint_Kitts_and_NEvis
+
+:Saint_Kitts_and_NEvis rdf:type :Caribbean ,
+                                owl:NamedIndividual ,
+                                owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Saint_Lucia
+
+:Saint_Lucia rdf:type :Caribbean ,
+                      owl:NamedIndividual ,
+                      owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Saint_Martin
+
+:Saint_Martin rdf:type :Caribbean ,
+                       owl:NamedIndividual ,
+                       owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Saint_Pierre_and_Miquelon
+
+:Saint_Pierre_and_Miquelon rdf:type :Northern_America ,
+                                    owl:NamedIndividual ,
+                                    owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Saint_Vincent_and_the_Grenadines
+
+:Saint_Vincent_and_the_Grenadines rdf:type :Caribbean ,
+                                           owl:NamedIndividual ,
+                                           owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Samoa
+
+:Samoa rdf:type :Polynesia ,
+                owl:NamedIndividual ,
+                owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#San_Marino
+
+:San_Marino rdf:type :Southern_Europe ,
+                     owl:NamedIndividual ,
+                     owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Sao_Tome_and_Principe
+
+:Sao_Tome_and_Principe rdf:type :Middle_Africa ,
+                                owl:NamedIndividual ,
+                                owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Saudi_Arabia
+
+:Saudi_Arabia rdf:type :Western_Asia ,
+                       owl:NamedIndividual ,
+                       owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Sci-Fi
+
+:Sci-Fi rdf:type :SciFi_and_Fantasy ,
+                 owl:NamedIndividual ,
+                 owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Senegal
+
+:Senegal rdf:type :Western_Africa ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Serbia
+
+:Serbia rdf:type :Southern_Europe ,
+                 owl:NamedIndividual ,
+                 owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Serbia_and_Montenegro
+
+:Serbia_and_Montenegro rdf:type :Southern_Europe ,
+                                owl:NamedIndividual ,
+                                owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Seychelles
+
+:Seychelles rdf:type :Eastern_Africa ,
+                     owl:NamedIndividual ,
+                     owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Short
+
+:Short rdf:type :Genre ,
+                owl:NamedIndividual ,
+                owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Sierra_Leone
+
+:Sierra_Leone rdf:type :Western_Africa ,
+                       owl:NamedIndividual ,
+                       owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Singapore
+
+:Singapore rdf:type :Southeastern_Asia ,
+                    owl:NamedIndividual ,
+                    owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Slovakia
+
+:Slovakia rdf:type :Eastern_Europe ,
+                   owl:NamedIndividual ,
+                   owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Slovenia
+
+:Slovenia rdf:type :Southern_Europe ,
+                   owl:NamedIndividual ,
+                   owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Solomon_Island
+
+:Solomon_Island rdf:type :Melanesia ,
+                         owl:NamedIndividual ,
+                         owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Somalia
+
+:Somalia rdf:type :Eastern_Africa ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#South_Africa
+
+:South_Africa rdf:type :Southern_Africa ,
+                       owl:NamedIndividual ,
+                       owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#South_Korea
+
+:South_Korea rdf:type :Eastern_Asia ,
+                      owl:NamedIndividual ,
+                      owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Spain
+
+:Spain rdf:type :Southern_Europe ,
+                owl:NamedIndividual ,
+                owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Sport
+
+:Sport rdf:type :Entertaining_Information ,
+                owl:NamedIndividual ,
+                owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Sri_Lanka
+
+:Sri_Lanka rdf:type :Southern_Asia ,
+                    owl:NamedIndividual ,
+                    owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Sudan
+
+:Sudan rdf:type :Northern_Africa ,
+                owl:NamedIndividual ,
+                owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Suriname
+
+:Suriname rdf:type :South_America ,
+                   owl:NamedIndividual ,
+                   owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Svalbard_and_Jan_Mayen_Islands
+
+:Svalbard_and_Jan_Mayen_Islands rdf:type :Northern_Europe ,
+                                         owl:NamedIndividual ,
+                                         owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Swaziland
+
+:Swaziland rdf:type :Southern_Africa ,
+                    owl:NamedIndividual ,
+                    owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Sweden
+
+:Sweden rdf:type :Northern_Europe ,
+                 owl:NamedIndividual ,
+                 owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Switzerland
+
+:Switzerland rdf:type :Western_Europe ,
+                      owl:NamedIndividual ,
+                      owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Syria
+
+:Syria rdf:type :Western_Asia ,
+                owl:NamedIndividual ,
+                owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Taiwan
+
+:Taiwan rdf:type :Eastern_Asia ,
+                 owl:NamedIndividual ,
+                 owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Tajikistan
+
+:Tajikistan rdf:type :Central_Asia ,
+                     owl:NamedIndividual ,
+                     owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Talk-Show
+
+:Talk-Show rdf:type :Info-TV ,
+                    owl:NamedIndividual ,
+                    owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Tanzania
+
+:Tanzania rdf:type :Eastern_Africa ,
+                   owl:NamedIndividual ,
+                   owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Thailand
+
+:Thailand rdf:type :Southeastern_Asia ,
+                   owl:NamedIndividual ,
+                   owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Thriller
+
+:Thriller rdf:type :Sensible_Thrilling ,
+                   owl:NamedIndividual ,
+                   owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Timor-Leste
+
+:Timor-Leste rdf:type :Southeastern_Asia ,
+                      owl:NamedIndividual ,
+                      owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Togo
+
+:Togo rdf:type :Western_Africa ,
+               owl:NamedIndividual ,
+               owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Tokelau
+
+:Tokelau rdf:type :Polynesia ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Tonga
+
+:Tonga rdf:type :Polynesia ,
+                owl:NamedIndividual ,
+                owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Trinidad_and_Tobago
+
+:Trinidad_and_Tobago rdf:type :Caribbean ,
+                              owl:NamedIndividual ,
+                              owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Tunisia
+
+:Tunisia rdf:type :Northern_Africa ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Turkey
+
+:Turkey rdf:type :Western_Asia ,
+                 owl:NamedIndividual ,
+                 owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Turkmenistan
+
+:Turkmenistan rdf:type :Central_Asia ,
+                       owl:NamedIndividual ,
+                       owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Turks_and_Caicos_Islands
+
+:Turks_and_Caicos_Islands rdf:type :Caribbean ,
+                                   owl:NamedIndividual ,
+                                   owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Tuvalu
+
+:Tuvalu rdf:type :Polynesia ,
+                 owl:NamedIndividual ,
+                 owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#USA
+
+:USA rdf:type :Northern_America ,
+              owl:NamedIndividual ,
+              owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#USA_Passed
+
+:USA_Passed rdf:type :Certification ,
+                     owl:NamedIndividual ,
+                     owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Uganda
+
+:Uganda rdf:type :Eastern_Africa ,
+                 owl:NamedIndividual ,
+                 owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Ukraine
+
+:Ukraine rdf:type :Eastern_Europe ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#United_Arab_Emirates
+
+:United_Arab_Emirates rdf:type :Western_Asia ,
+                               owl:NamedIndividual ,
+                               owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#United_Kingdom
+
+:United_Kingdom rdf:type :Northern_Europe ,
+                         owl:NamedIndividual ,
+                         owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#United_States_Virgin_Islands
+
+:United_States_Virgin_Islands rdf:type :Caribbean ,
+                                       owl:NamedIndividual ,
+                                       owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Uruguay
+
+:Uruguay rdf:type :South_America ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Uzbekistan
+
+:Uzbekistan rdf:type :Central_Asia ,
+                     owl:NamedIndividual ,
+                     owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Vanuatu
+
+:Vanuatu rdf:type :Melanesia ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Venezuela
+
+:Venezuela rdf:type :South_America ,
+                    owl:NamedIndividual ,
+                    owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Vietnam
+
+:Vietnam rdf:type :Southeastern_Asia ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Wallis_and_Futuna_Islands
+
+:Wallis_and_Futuna_Islands rdf:type :Polynesia ,
+                                    owl:NamedIndividual ,
+                                    owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#War
+
+:War rdf:type :Brute_Action ,
+              owl:NamedIndividual ,
+              owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Western
+
+:Western rdf:type :Old_Action ,
+                  owl:NamedIndividual ,
+                  owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Western_Sahara
+
+:Western_Sahara rdf:type :Northern_Africa ,
+                         owl:NamedIndividual ,
+                         owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Yemen
+
+:Yemen rdf:type :Western_Asia ,
+                owl:NamedIndividual ,
+                owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Zaire
+
+:Zaire rdf:type :Middle_Africa ,
+                owl:NamedIndividual ,
+                owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Zambia
+
+:Zambia rdf:type :Eastern_Africa ,
+                 owl:NamedIndividual ,
+                 owl:Thing .
+
+
+
+###  http://www.movieontology.org/2009/10/01/movieontology.owl#Zimbabwe
+
+:Zimbabwe rdf:type :Eastern_Africa ,
+                   owl:NamedIndividual ,
+                   owl:Thing .
+
+
+
+
+
+#################################################################
+#
+#    General axioms
+#
+#################################################################
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Amazon.com_retailer
+                        :Blockbuster.com_retailer
+                      )
+] .
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Caribbean
+                :LatinAmerica
+                :Northern_America
+              )
+] .
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Amazon.com_retailer
+                        :Netflix.com_retailer
+                      )
+] .
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Netflix.com_retailer
+                        :RottenTomatoes.com_retailer
+                      )
+] .
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Eastern_Europe
+                :Northern_Europe
+                :Southern_Europe
+                :Western_Europe
+              )
+] .
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Eastern_Africa
+                :Middle_Africa
+                :Northern_Africa
+                :Southern_Africa
+                :Western_Africa
+              )
+] .
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Australia_and_New_Zealand
+                :Melanesia
+                :Micronesia
+                :Polynesia
+              )
+] .
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Blockbuster.com_retailer
+                        :RottenTomatoes.com_retailer
+                      )
+] .
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Central_Asia
+                :Eastern_Asia
+                :Southeastern_Asia
+                :Southern_Asia
+                :Western_Asia
+              )
+] .
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( dbpedia:Language
+                :Colorinfo
+                :Sound_Mix
+              )
+] .
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Blockbuster.com_retailer
+                        :Netflix.com_retailer
+                      )
+] .
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Africa
+                :America
+                :Asia
+                :Europe
+                :Oceania
+              )
+] .
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Amazon.com_retailer
+                        :RottenTomatoes.com_retailer
+                      )
+] .
+
+
+
+
+###  Generated by the OWL API (version 3.4.5-SNAPSHOT) http://owlapi.sourceforge.net

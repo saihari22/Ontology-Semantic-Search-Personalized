@@ -1,0 +1,369 @@
+@prefix ns1:    <http://chintan.com/movies/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+
+
+
+ns1:Entertainment a owl:Class ;
+rdfs:label "Entertainment"^^xsd:string .
+
+ns1:Movie a owl:Class ;
+rdfs:label "Movie"^^xsd:string .
+
+ns1:TVSeries a owl:Class ;
+rdfs:label "TV Series"^^xsd:string .
+
+ns1:Actor a owl:Class ;
+rdfs:label "Actor"^^xsd:string .
+
+ns1:Country a owl:Class ;
+rdfs:label "Country"^^xsd:string .
+
+ns1:Director a owl:Class ;
+rdfs:label "Director"^^xsd:string .
+
+ns1:Genre a owl:Class ;
+rdfs:label "Genre"^^xsd:string .
+
+ns1:Industry a owl:Class ;
+rdfs:label "Industry"^^xsd:string .
+
+ns1:Studio a owl:Class ;
+rdfs:label "Studio"^^xsd:string .
+
+ns1:Award a owl:Class ;
+rdfs:label "Award"^^xsd:string .
+
+ns1:Language a owl:Class ;
+rdfs:label "Language"^^xsd:string .
+
+ns1:Age a owl:Class ;
+rdfs:label "Age"^^xsd:string .
+
+ns1:BoxOffice a owl:Class ;
+rdfs:label "Box Office"^^xsd:string .
+
+ns1:Rating a owl:Class ;
+rdfs:label "Rating"^^xsd:string .
+
+ns1:DomesticGross a owl:Class ;
+rdfs:label "Domestic Gross"^^xsd:string .
+
+ns1:WorldwideGross a owl:Class ;
+rdfs:label "Worldwide Gross"^^xsd:string .
+
+ns1:Year a owl:Class ;
+rdfs:label "Year"^^xsd:string .
+
+ns1:Production a owl:Class ;
+rdfs:label "Production"^^xsd:string .
+
+ns1:Distribution a owl:Class ;
+rdfs:label "Distribution"^^xsd:string .
+
+ns1:RottenTomatoes a owl:Class ;
+rdfs:label "Rotten Tomatoes"^^xsd:string .
+
+ns1:IMDB a owl:Class ;
+rdfs:label "IMDB"^^xsd:string .
+
+ns1:Network a owl:Class ;
+rdfs:label "Network"^^xsd:string .
+
+
+
+#---------------------------------- Individuals here ----------
+
+
+ns1:Movies a owl:Thing, ns1:Entertainment ;
+            ns1:isAMovie ns1:Newton, ns1:Frequency .
+
+ns1:TVShows a owl:Thing, ns1:Entertainment ;
+            ns1:isASeries ns1:Sherlock .
+
+
+
+ns1:Newton a owl:Thing, ns1:Movie ;
+            ns1:hasActor ns1:RajkummarRao, ns1:AnjaliPatil, ns1:PankajTripathi ;
+            ns1:hasDirector ns1:AmitMasurkar ;
+            ns1:ofGenre ns1:Drama, ns1:Comedy ;
+            ns1:madeBy ns1:DrishyamFilms ;
+            ns1:belongsTo ns1:Bollywood ;
+            ns1:isOfLanguage ns1:Hindi ;
+            ns1:releasedIn ns1:2017;
+            ns1:isFrom ns1:India;
+            ns1:wonAward ns1:FilmfareAward, ns1:NationalFilmAward, ns1:IIFAAward, ns1:AsianFilmAward ;
+            rdfs:label "Newton"^^xsd:string .
+
+
+ns1:Frequency a owl:Thing, ns1:Movie ;
+                        ns1:hasActor ns1:JimCaviezel, ns1:DennisQuaid ;
+                        ns1:hasDirector ns1:GregoryHoblit ;
+                        ns1:ofGenre ns1:Fantasy, ns1:Thriller ;
+                        ns1:madeBy ns1:WarnerBros ;
+                        ns1:belongsTo ns1:Hollywood ;
+                        ns1:releasedIn ns1:2010;
+                        ns1:isOfLanguage ns1:English ;
+                        rdfs:label "Frequency"^^xsd:string .
+
+ns1:Sherlock a owl:Thing, ns1:TVSeries ;
+                                                ns1:hasActor ns1:BenedictCumberbatch, ns1:MartinFreeman ;
+                                                ns1:hasDirector ns1:TobyHaynes ;
+                                                ns1:ofGenre ns1:Drama, ns1:Thriller ;
+                                                ns1:ownedBy ns1:BBC ;
+                                                ns1:isOfLanguage ns1:English ;
+                                                ns1:isFrom ns1:UnitedKingdom;
+                                                ns1:wonAward ns1:PrimetimeEmmyAward , ns1:SatelliteAward ;
+                                                rdfs:label "Sherlock"^^xsd:string .
+
+
+
+
+
+
+ns1:Movies a ns1:Entertainment ;
+rdfs:label "Movies"^^xsd:string .
+
+ns1:TVShows a ns1:Entertainment ;
+rdfs:label "TV Shows"^^xsd:string .
+
+ns1:2017 a ns1:Year ;
+rdfs:label "2017"^^xsd:string .
+ns1:2010 a ns1:Year ;
+rdfs:label "2010"^^xsd:string .
+ns1:2018 a ns1:Year ;
+rdfs:label "2018"^^xsd:string .
+
+ns1:BBC a ns1:Network ;
+rdfs:label "BBC"^^xsd:string .
+
+
+ns1:RajkummarRao a ns1:Actor ;
+ns1:isFrom ns1:India ;
+rdfs:label "Rajkummar Rao"^^xsd:string .
+
+
+ns1:BenedictCumberbatch a ns1:Actor ;
+ns1:isFrom ns1:UnitedKingdom ;
+rdfs:label "Benedict Cumberbatch"^^xsd:string .
+
+ns1:MartinFreeman a ns1:Actor ;
+ns1:isFrom ns1:UnitedKingdom ;
+rdfs:label "Martin Freeman"^^xsd:string .
+
+
+
+ns1:AnjaliPatil a ns1:Actor ;
+ns1:isFrom ns1:India ;
+rdfs:label "Anjali Patil"^^xsd:string .
+
+ns1:PankajTripathi a ns1:Actor ;
+ns1:isFrom ns1:India ;
+rdfs:label "Pankaj Tripathi"^^xsd:string .
+
+ns1:JimCaviezel a ns1:Actor ;
+ns1:isFrom ns1:UnitedStatesofAmerica ;
+rdfs:label "Jim Caviezel"^^xsd:string .
+
+ns1:DennisQuaid a ns1:Actor ;
+ns1:isFrom ns1:UnitedStatesofAmerica ;
+rdfs:label "Dennis Quaid"^^xsd:string .
+
+ns1:AmitMasurkar a ns1:Director ;
+ns1:isFrom ns1:India ;
+rdfs:label "Amit Masurkar"^^xsd:string .
+
+ns1:GregoryHoblit a ns1:Director ;
+ns1:isFrom ns1:India ;
+rdfs:label "Gregory Hoblit"^^xsd:string .
+
+ns1:TobyHaynes a ns1:Director ;
+ns1:isFrom ns1:UnitedKingdom ;
+rdfs:label "Toby Haynes"^^xsd:string .
+
+
+ns1:Drama a ns1:Genre ;
+rdfs:label "Drama"^^xsd:string .
+
+ns1:Comedy a ns1:Genre ;
+rdfs:label "Comedy"^^xsd:string .
+
+ns1:Fantasy a ns1:Genre ;
+rdfs:label "Fantasy"^^xsd:string .
+
+ns1:Thriller a ns1:Genre ;
+rdfs:label "Thriller"^^xsd:string .
+
+ns1:DrishyamFilms a ns1:Studio ;
+rdfs:label "Drishyam Films"^^xsd:string .
+
+ns1:WarnerBros a ns1:Studio ;
+rdfs:label "Warner Bros"^^xsd:string .
+
+ns1:Bollywood a ns1:Industry ;
+rdfs:label "Bollywood"^^xsd:string .
+
+ns1:Hollywood a ns1:Industry ;
+rdfs:label "Hollywood"^^xsd:string .
+
+ns1:Hindi a ns1:Language ;
+rdfs:label "Hindi"^^xsd:string .
+
+ns1:English a ns1:Language ;
+rdfs:label "English"^^xsd:string .
+
+ns1:FilmfareAward a ns1:Award ;
+rdfs:label "Filmfare Award"^^xsd:string .
+
+ns1:IIFAAward a ns1:Award ;
+rdfs:label "IIFA Award"^^xsd:string .
+
+ns1:NationalFilmAward a ns1:Award ;
+rdfs:label "National Film Award"^^xsd:string .
+
+ns1:AsianFilmAward a ns1:Award ;
+rdfs:label "Asian Film Award"^^xsd:string .
+
+
+ns1:PrimetimeEmmyAward a ns1:Award ;
+rdfs:label "Primetime Emmy Award"^^xsd:string .
+
+ns1:SatelliteAward a ns1:Award ;
+rdfs:label " Satellite Award"^^xsd:string .
+
+ns1:UnitedStatesofAmerica a ns1:Country ;
+rdfs:label "United States of America"^^xsd:string .
+
+ns1:India a ns1:Country ;
+rdfs:label "India"^^xsd:string .
+
+ns1:UnitedKingdom a ns1:Country ;
+rdfs:label "United Kingdom"^^xsd:string .
+
+
+#----------------------------------------Properties------------------
+
+ns1:isFrom a owl:ObjectProperty ;
+rdfs:label "is from"^^xsd:string ;
+rdfs:domain ns1:Actor, ns1:Director, ns1:Movie, ns1:TVSeries ;
+rdfs:range ns1:Country .
+
+ns1:hasActor a owl:ObjectProperty ;
+rdfs:label "has actor"^^xsd:string ;
+rdfs:domain ns1:Movie, ns1:TVSeries ;
+rdfs:range ns1:Actor .
+
+ns1:hasDirector a owl:ObjectProperty ;
+rdfs:label "has director"^^xsd:string ;
+rdfs:domain ns1:Movie, ns1:TVSeries ;
+rdfs:range ns1:Director .
+
+ns1:ofGenre a owl:ObjectProperty ;
+rdfs:label "of genre"^^xsd:string ;
+rdfs:domain ns1:Movie, ns1:TVSeries ;
+rdfs:range ns1:Genre .
+
+ns1:madeBy a owl:ObjectProperty ;
+rdfs:label "made by"^^xsd:string ;
+rdfs:domain ns1:Movie ;
+rdfs:range ns1:Studio .
+
+ns1:hasWorkedIn a owl:ObjectProperty ;
+rdfs:label "has worked In"^^xsd:string ;
+rdfs:domain ns1:Actor, ns1:Director ;
+rdfs:range ns1:Industry .
+
+ns1:belongsTo a owl:ObjectProperty ;
+rdfs:label "belongs to"^^xsd:string ;
+rdfs:domain ns1:Movie ;
+rdfs:range ns1:Industry .
+
+ns1:wonAward a owl:ObjectProperty ;
+rdfs:label "won award"^^xsd:string ;
+rdfs:domain ns1:Movie, ns1:TVSeries ;
+rdfs:range ns1:Award .
+
+ns1:awardedTo a owl:ObjectProperty ;
+rdfs:label "awarded To"^^xsd:string ;
+rdfs:domain ns1:Award ;
+rdfs:range ns1:Actor, ns1:Movie, ns1:Director, ns1:TVSeries .
+
+ns1:isOfLanguage a owl:ObjectProperty ;
+rdfs:label "is Of Language"^^xsd:string ;
+rdfs:domain ns1:Movie ;
+rdfs:range ns1:Language .
+
+
+ns1:ofAge a owl:ObjectProperty ;
+rdfs:label "of age"^^xsd:string ;
+rdfs:domain ns1:Actor, ns1:Director ;
+rdfs:range ns1:Age .
+
+ns1:ofRating a owl:ObjectProperty ;
+rdfs:label "of rating"^^xsd:string ;
+rdfs:domain ns1:Movie ;
+rdfs:range ns1:Rating .
+
+ns1:hasMade a owl:ObjectProperty ;
+rdfs:label "has made"^^xsd:string ;
+rdfs:domain ns1:Movie ;
+rdfs:range ns1:BoxOffice .
+
+ns1:hasDomestic a owl:ObjectProperty ;
+rdfs:label "has domestic"^^xsd:string ;
+rdfs:domain ns1:BoxOffice ;
+rdfs:range ns1:DomesticGross .
+
+ns1:hasWorldwide a owl:ObjectProperty ;
+rdfs:label "has Worldwide"^^xsd:string ;
+rdfs:domain ns1:BoxOffice ;
+rdfs:range ns1:WorldwideGross .
+
+ns1:releasedIn a owl:ObjectProperty ;
+rdfs:label "realeased In"^^xsd:string ;
+rdfs:domain ns1:Movie ;
+rdfs:range ns1:Year .
+
+ns1:distributedBy a owl:ObjectProperty ;
+rdfs:label "distributed by"^^xsd:string ;
+rdfs:domain ns1:Studio ;
+rdfs:range ns1:Distribution .
+
+ns1:producedBy a owl:ObjectProperty ;
+rdfs:label "produced by"^^xsd:string ;
+rdfs:domain ns1:Studio ;
+rdfs:range ns1:Production .
+
+ns1:basedIn a owl:ObjectProperty ;
+rdfs:label "basedIn"^^xsd:string ;
+rdfs:domain ns1:Production, ns1:Distribution ;
+rdfs:range ns1:Country .
+
+ns1:isIMBD a owl:ObjectProperty ;
+rdfs:label "IMDB rating"^^xsd:string ;
+rdfs:domain ns1:Rating ;
+rdfs:range ns1:IMDB .
+
+ns1:isRT a owl:ObjectProperty ;
+rdfs:label "RottenTomatoes rating"^^xsd:string ;
+rdfs:domain ns1:Rating ;
+rdfs:range ns1:RottenTomatoes .
+
+
+ns1:isAMovie a owl:ObjectProperty ;
+rdfs:label "is Movie"^^xsd:string ;
+rdfs:domain ns1:Entertainment ;
+rdfs:range ns1:Movie .
+
+ns1:isASeries a owl:ObjectProperty ;
+rdfs:label "is Series"^^xsd:string ;
+rdfs:domain ns1:Entertainment ;
+rdfs:range ns1:TVSeries .
+
+ns1:ownedBy a owl:ObjectProperty ;
+rdfs:label "owned By"^^xsd:string ;
+rdfs:domain ns1:TVSeries ;
+rdfs:range ns1:Network .

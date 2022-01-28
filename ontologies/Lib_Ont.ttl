@@ -1,0 +1,1172 @@
+@prefix : <http://www.LibrarySystem.com/ontologies/LMS.owl#> .
+@prefix bp: <http://www.biopax.org/release/biopax-level3.owl#> .
+@prefix cd: <http://www.recshop.fake/cd#> .
+@prefix cs: <http://purl.org/vocab/changeset/schema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ex: <http://example.org/> .
+@prefix fo: <http://www.w3.org/1999/XSL/Format> .
+@prefix gf: <http://www.intuit.com/ontology/invoice#> .
+@prefix hp: <http://purl.obolibrary.org/obo/hp#> .
+@prefix lg: <http://logicalgeometry.org/> .
+@prefix ns: <http://creativecommons.org/ns#> .
+@prefix si: <https://www.w3schools.com/rdf/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix bmw: <http://www.bmw-kg.de/entity/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix gov: <http://gov.genealogy.net/ontology.owl#> .
+@prefix hp2: <http://purl.obolibrary.org/obo/hp.owl#> .
+@prefix j.0: <http://www.maisis.com/owl#> .
+@prefix j.1: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix j.2: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix j.3: <http://www.ontologydesignpatterns.org/ont/fred/domain.owl#> .
+@prefix j.4: <http://www.ontologydesignpatterns.org/ont/boxer/boxing.owl#> .
+@prefix j.5: <http://ontologydesignpatterns.org/cp/owl/semiotics.owl#> .
+@prefix j.6: <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#> .
+@prefix j.7: <http://dbpedia.org/resource/> .
+@prefix j.8: <http://www.ontologydesignpatterns.org/ont/fred/quantifiers.owl#> .
+@prefix j.9: <http://www.ontologydesignpatterns.org/ont/fred/pos.owl#> .
+@prefix nbo: <http://purl.obolibrary.org/obo/nbo.owl#> .
+@prefix ns0: <http://example.org/study#> .
+@prefix ns1: <http://www.example.com/WS/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix res: <http://www.w3.org/2005/sparql-results#> .
+@prefix sct: <http://www.semanticweb.org/ontologies/2013/2/Ontology1362609471108.owl#> .
+@prefix svg: <http://www.w3.org/2000/svg> .
+@prefix vin: <http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#> .
+@prefix vtb: <https://www.farmland.org/vegetables#> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix www: <http://www.royalty.org#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsi: <http://www.w3.org/2001/XMLSchema-instance> .
+@prefix xsp: <http://www.owl-ontologies.com/2005/08/07/xsp.owl#> .
+@prefix Test: <Test#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix daml: <http://www.daml.org/2001/03/daml+oil#> .
+@prefix exo1: <http://www.example.com/WS/exo1#> .
+@prefix fbbt: <http://purl.obolibrary.org/obo/fbbt#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix food: <http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#> .
+@prefix gnlp: <http://meredith.com/googlenlp-categories-ns#> .
+@prefix ical: <http://www.w3.org/2002/12/cal/ical#> .
+@prefix pest: <https://www.farmland.org/pest#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rs2e: <http://www.cstb.fr/rs2e/raw> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix pizza: <http://www.co-ode.org/ontologies/pizza/pizza.owl#> .
+@prefix quest: <http://obda.org/quest#> .
+@prefix swrla: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix xhtml: <http://www.w3.org/1999/xhtml> .
+@prefix xlink: <http://www.w3.org/1999/xlink> .
+@prefix AvionX: <http://uim.boeing.com/ent/cm_ce/uim/AvionX/> .
+@prefix hsapdv: <http://purl.obolibrary.org/obo/hsapdv#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl2xml: <http://www.w3.org/2006/12/owl2-xml#> .
+@prefix protege: <http://protege.stanford.edu/plugins/owl/protege#> .
+@prefix Internet: <http://www.LibrarySystem.com/ontologies/LMS.owl#Internet&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;> .
+@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix Arpenteur: <http://www.arpenteur.org/ontology/Arpenteur.owl#> .
+@prefix Internet2: <http://www.LibrarySystem.com/ontologies/LMS.owl#Internet&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;> .
+@prefix DOLCE-Lite: <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#> .
+@prefix Cryptography: <http://www.LibrarySystem.com/ontologies/LMS.owl#Cryptography&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;> .
+@prefix DigitalMedia: <http://people.dsv.su.se/~dossis/ontologies/DigitalMedia.owl#> .
+@prefix Cryptography2: <http://www.LibrarySystem.com/ontologies/LMS.owl#Cryptography&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;> .
+@prefix DataWarehousing: <http://www.LibrarySystem.com/ontologies/LMS.owl#DataWarehousing&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;> .
+@prefix DataWarehousing2: <http://www.LibrarySystem.com/ontologies/LMS.owl#DataWarehousing&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;> .
+@prefix untitled-ontology-39: <http://www.semanticweb.org/wagner_ma/ontologies/2019/1/untitled-ontology-39#> .
+@prefix untitled-ontology-44: <http://www.semanticweb.org/zdawood/ontologies/2018/6/untitled-ontology-44#> .
+@base <http://www.LibrarySystem.com/ontologies/LMS.owl> .
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#AssociateWith
+
+:AssociateWith rdf:type owl:ObjectProperty ,
+                        owl:SymmetricProperty ;
+
+               owl:inverseOf :AssociateWith ;
+
+               rdfs:range :Librarian .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#Borrow
+
+:Borrow rdf:type owl:ObjectProperty ;
+
+        rdfs:comment "This Property Specifies that Students Borrow Books from Library" ;
+
+        rdfs:domain :PGStudent ;
+
+        rdfs:range :PGTextBook ;
+
+        rdfs:domain :UGStudent ;
+
+        rdfs:range :UGTextBook ;
+
+        owl:inverseOf :isBorrowedBy .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#Browse
+
+:Browse rdf:type owl:ObjectProperty ;
+
+        rdfs:domain :Faculty ;
+
+        rdfs:range :OnlineJournal ;
+
+        rdfs:domain :ResearchScholar ;
+
+        owl:inverseOf :isBrowsedBy .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#Issue
+
+:Issue rdf:type owl:ObjectProperty ;
+
+       rdfs:domain :Librarian ;
+
+       rdfs:range :TextBook ;
+
+       owl:inverseOf :isIssuedBy .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#Refer
+
+:Refer rdf:type owl:ObjectProperty ;
+
+       rdfs:domain :ResearchScholar ;
+
+       rdfs:range :Thesis ;
+
+       owl:inverseOf :isReferedBy .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#Return
+
+:Return rdf:type owl:ObjectProperty ;
+
+        rdfs:domain :PGStudent ;
+
+        rdfs:range :PGTextBook ;
+
+        rdfs:domain :UGStudent ;
+
+        rdfs:range :UGTextBook ;
+
+        owl:inverseOf :isReturnedBy .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#TempTransferBookTo
+
+:TempTransferBookTo rdf:type owl:ObjectProperty ,
+                             owl:TransitiveProperty ;
+
+                    rdfs:domain :AsstLibrarian ;
+
+                    rdfs:range :AsstLibrarian ;
+
+                    rdfs:domain :Faculty ;
+
+                    rdfs:range :Student .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#Use
+
+:Use rdf:type owl:ObjectProperty ;
+
+     rdfs:range :InternetAndWiFiService ;
+
+     rdfs:domain :LibraryMember ;
+
+     owl:inverseOf :isUsedBy .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#Utilize
+
+:Utilize rdf:type owl:ObjectProperty ;
+
+         rdfs:domain :LibraryMember ;
+
+         rdfs:range :LibraryResource .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#hasName
+
+:hasName rdf:type owl:ObjectProperty ;
+
+         rdfs:range :Student ;
+
+         rdfs:domain :Student .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#hasTitle
+
+:hasTitle rdf:type owl:ObjectProperty ;
+
+          rdfs:domain :TextBook ;
+
+          rdfs:range :TextBook .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#isBorrowedBy
+
+:isBorrowedBy rdf:type owl:ObjectProperty ;
+
+              rdfs:range :PGStudent ;
+
+              rdfs:domain :PGTextBook ;
+
+              rdfs:range :UGStudent ;
+
+              rdfs:domain :UGTextBook .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#isBrowsedBy
+
+:isBrowsedBy rdf:type owl:ObjectProperty ;
+
+             rdfs:range :Faculty ;
+
+             rdfs:domain :OnlineJournal .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#isIssuedBy
+
+:isIssuedBy rdf:type owl:ObjectProperty ;
+
+            rdfs:range :Librarian ;
+
+            rdfs:domain :TextBook .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#isReferedBy
+
+:isReferedBy rdf:type owl:ObjectProperty ;
+
+             rdfs:range :ResearchScholar ;
+
+             rdfs:domain :Thesis .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#isReturnedBy
+
+:isReturnedBy rdf:type owl:ObjectProperty ;
+
+              rdfs:range :PGStudent ;
+
+              rdfs:domain :PGTextBook ;
+
+              rdfs:range :UGStudent ;
+
+              rdfs:domain :UGTextBook .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#isUsedBy
+
+:isUsedBy rdf:type owl:ObjectProperty ;
+
+          rdfs:domain :InternetAndWiFiService ;
+
+          rdfs:range :LibraryMember .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#isUtilizedBy
+
+:isUtilizedBy rdf:type owl:ObjectProperty ;
+
+              rdfs:range :LibraryMember ;
+
+              rdfs:domain :LibraryResource ;
+
+              owl:inverseOf :Utilize .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#hasLibCards
+
+:hasLibCards rdf:type owl:DatatypeProperty .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#AdminStaff
+
+:AdminStaff rdf:type owl:Class ;
+
+            rdfs:subClassOf :LibraryMember .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#AsstLibrarian
+
+:AsstLibrarian rdf:type owl:Class ;
+
+               rdfs:subClassOf :LibraryPersonnel .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#Book
+
+:Book rdf:type owl:Class ;
+
+      rdfs:subClassOf :LibraryResource .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#CD
+
+:CD rdf:type owl:Class ;
+
+    rdfs:subClassOf :LibraryResource .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#CurrentAwarenessService
+
+:CurrentAwarenessService rdf:type owl:Class ;
+
+                         rdfs:subClassOf :LibraryService .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#Faculty
+
+:Faculty rdf:type owl:Class ;
+
+         rdfs:subClassOf :LibraryMember ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :Browse ;
+                           owl:someValuesFrom :OnlineJournal
+                         ] .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#GeneralBook
+
+:GeneralBook rdf:type owl:Class ;
+
+             rdfs:subClassOf :Book .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#GuestUser
+
+:GuestUser rdf:type owl:Class ;
+
+           rdfs:subClassOf :LibraryMember .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#InternetAndWiFiService
+
+:InternetAndWiFiService rdf:type owl:Class ;
+
+                        rdfs:subClassOf :LibraryService .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#Journal
+
+:Journal rdf:type owl:Class ;
+
+         rdfs:subClassOf :LibraryResource .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#JrAssistant
+
+:JrAssistant rdf:type owl:Class ;
+
+             rdfs:subClassOf :LibraryPersonnel .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#LendingService
+
+:LendingService rdf:type owl:Class ;
+
+                rdfs:subClassOf :LibraryService .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#Librarian
+
+:Librarian rdf:type owl:Class ;
+
+           rdfs:subClassOf :LibraryPersonnel ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :Issue ;
+                             owl:someValuesFrom :TextBook
+                           ] .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#LibraryMember
+
+:LibraryMember rdf:type owl:Class ;
+
+               rdfs:subClassOf owl:Thing ;
+
+               rdfs:comment """This Class includes all the people who have membership in the library and are
+called Library Members""" .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#LibraryPersonnel
+
+:LibraryPersonnel rdf:type owl:Class ;
+
+                  rdfs:subClassOf owl:Thing ;
+
+                  rdfs:comment """This Class Includes all the persons who work in the Library with different
+Positions and different set of works""" .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#LibraryResource
+
+:LibraryResource rdf:type owl:Class ;
+
+                 rdfs:subClassOf owl:Thing .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#LibraryService
+
+:LibraryService rdf:type owl:Class ;
+
+                rdfs:subClassOf owl:Thing .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#NewsPaper
+
+:NewsPaper rdf:type owl:Class ;
+
+           rdfs:subClassOf :LibraryResource .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#NewsPaperService
+
+:NewsPaperService rdf:type owl:Class ;
+
+                  rdfs:subClassOf :LibraryService .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#OnlineJournal
+
+:OnlineJournal rdf:type owl:Class ;
+
+               rdfs:subClassOf :LibraryResource .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#PGStudent
+
+:PGStudent rdf:type owl:Class ;
+
+           rdfs:subClassOf :Student ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :Borrow ;
+                             owl:allValuesFrom :PGTextBook
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :Borrow ;
+                             owl:onClass :PGTextBook ;
+                             owl:maxQualifiedCardinality "5"^^xsd:nonNegativeInteger
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasName ;
+                             owl:hasValue :Stephen
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasName ;
+                             owl:hasValue :George
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasName ;
+                             owl:hasValue :Mahendra
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasLibCards ;
+                             owl:hasValue 5
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasName ;
+                             owl:hasValue :Pavani
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasName ;
+                             owl:hasValue :William
+                           ] ;
+
+           owl:disjointWith :UGStudent .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#PGTextBook
+
+:PGTextBook rdf:type owl:Class ;
+
+            rdfs:subClassOf :TextBook ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasTitle ;
+                              owl:hasValue :DataWarehousingAndDataMining
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasTitle ;
+                              owl:hasValue :CryptographyAndNetworkSecurity
+                            ] ;
+
+            owl:disjointWith :UGTextBook .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#ReferenceBook
+
+:ReferenceBook rdf:type owl:Class ;
+
+               rdfs:subClassOf :Book .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#ReferenceService
+
+:ReferenceService rdf:type owl:Class ;
+
+                  rdfs:subClassOf :LibraryService .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#ReprographicService
+
+:ReprographicService rdf:type owl:Class ;
+
+                     rdfs:subClassOf :LibraryService .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#ResearchScholar
+
+:ResearchScholar rdf:type owl:Class ;
+
+                 rdfs:subClassOf :LibraryMember ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :Refer ;
+                                   owl:someValuesFrom :Thesis
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :Browse ;
+                                   owl:someValuesFrom :OnlineJournal
+                                 ] .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#Student
+
+:Student rdf:type owl:Class ;
+
+         rdfs:subClassOf :LibraryMember .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#Technician
+
+:Technician rdf:type owl:Class ;
+
+            rdfs:subClassOf :LibraryPersonnel .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#TextBook
+
+:TextBook rdf:type owl:Class ;
+
+          rdfs:subClassOf :Book .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#Thesis
+
+:Thesis rdf:type owl:Class ;
+
+        rdfs:subClassOf :LibraryResource .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#UGStudent
+
+:UGStudent rdf:type owl:Class ;
+
+           rdfs:subClassOf :Student ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :Borrow ;
+                             owl:onClass :UGTextBook ;
+                             owl:maxQualifiedCardinality "3"^^xsd:nonNegativeInteger
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasName ;
+                             owl:hasValue :Kishore
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasName ;
+                             owl:hasValue :Peter
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasName ;
+                             owl:hasValue :Samuel
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasName ;
+                             owl:hasValue :Rajini
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :Borrow ;
+                             owl:allValuesFrom :UGTextBook
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasLibCards ;
+                             owl:hasValue 3
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasName ;
+                             owl:hasValue :Bob
+                           ] .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#UGTextBook
+
+:UGTextBook rdf:type owl:Class ;
+
+            rdfs:subClassOf :TextBook ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasTitle ;
+                              owl:hasValue :VisualBasics
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasTitle ;
+                              owl:hasValue :DatabaseManagementSystem
+                            ] .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#ACM
+
+:ACM rdf:type :OnlineJournal ,
+              owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#ACMSIGKDD
+
+:ACMSIGKDD rdf:type :Journal ,
+                    owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#ACMSIGMIS
+
+:ACMSIGMIS rdf:type :Journal ,
+                    owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#AMaheshwari
+
+:AMaheshwari rdf:type :AdminStaff ,
+                      owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#APhanindra
+
+:APhanindra rdf:type :Faculty ,
+                     owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#ASoujanya
+
+:ASoujanya rdf:type :Faculty ,
+                    owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#Anuradha
+
+:Anuradha rdf:type :AsstLibrarian ,
+                   owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#AyeshaAmeen
+
+:AyeshaAmeen rdf:type :ResearchScholar ,
+                      owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#AyeshaBanu
+
+:AyeshaBanu rdf:type :ResearchScholar ,
+                     owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#BRajKumar
+
+:BRajKumar rdf:type :ResearchScholar ,
+                    owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#Bob
+
+:Bob rdf:type :UGStudent ,
+              owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#BuildingWebServiceOntology
+
+:BuildingWebServiceOntology rdf:type :Thesis ,
+                                     owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#Chip
+
+:Chip rdf:type :CD ,
+               owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#CryptographyAndNetworkSecurity
+
+:CryptographyAndNetworkSecurity rdf:type :PGTextBook ,
+                                         owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#DataWarehousingAndDataMining
+
+:DataWarehousingAndDataMining rdf:type :PGTextBook ,
+                                       owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#DatabaseManagementSystem
+
+:DatabaseManagementSystem rdf:type :UGTextBook ,
+                                   owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#DeccanChronicle
+
+:DeccanChronicle rdf:type :NewsPaper ,
+                          owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#Delnet
+
+:Delnet rdf:type :OnlineJournal ,
+                 owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#DeveloperIQ
+
+:DeveloperIQ rdf:type :CD ,
+                      owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#Digit
+
+:Digit rdf:type :CD ,
+                owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#DrKhaleel
+
+:DrKhaleel rdf:type :Faculty ,
+                    owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#DrSameenFatima
+
+:DrSameenFatima rdf:type :Faculty ,
+                         owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#Eenadu
+
+:Eenadu rdf:type :NewsPaper ,
+                 owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#ElectronicsForU
+
+:ElectronicsForU rdf:type :CD ,
+                          owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#EmbeddedSystemDesign
+
+:EmbeddedSystemDesign rdf:type :Journal ,
+                               owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#George
+
+:George rdf:type :PGStudent ,
+                 owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#IEEE
+
+:IEEE rdf:type :OnlineJournal ,
+               owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#IUPJournalOfMarketing
+
+:IUPJournalOfMarketing rdf:type :Journal ,
+                                owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#IndianJournalOfLabourEconomics
+
+:IndianJournalOfLabourEconomics rdf:type :Journal ,
+                                         owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#KSathish
+
+:KSathish rdf:type :AdminStaff ,
+                   owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#Kishore
+
+:Kishore rdf:type :UGStudent ,
+                  owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#LearnProfessionalism
+
+:LearnProfessionalism rdf:type :GeneralBook ,
+                               owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#MMadhu
+
+:MMadhu rdf:type :AdminStaff ,
+                 owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#MMalathi
+
+:MMalathi rdf:type :Librarian ,
+                   owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#Mahendra
+
+:Mahendra rdf:type :PGStudent ,
+                   owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#MarketYourSkills
+
+:MarketYourSkills rdf:type :GeneralBook ,
+                           owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#PCQuest
+
+:PCQuest rdf:type :CD ,
+                  owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#Pavani
+
+:Pavani rdf:type :PGStudent ,
+                 owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#Peter
+
+:Peter rdf:type :UGStudent ,
+                owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#Prof.ShivaramaKrishna
+
+:Prof.ShivaramaKrishna rdf:type :GuestUser ,
+                                owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#Prof.VenkatapathiRaju
+
+:Prof.VenkatapathiRaju rdf:type :GuestUser ,
+                                owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#RRajesh
+
+:RRajesh rdf:type :AdminStaff ,
+                  owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#Rajini
+
+:Rajini rdf:type :UGStudent ,
+                 owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#Raju
+
+:Raju rdf:type :Technician ,
+               owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#Ranjith
+
+:Ranjith rdf:type :JrAssistant ,
+                  owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#RanjithReddy
+
+:RanjithReddy rdf:type :ResearchScholar ,
+                       owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#RuleBasedSemiAutomaticOntologyLearning
+
+:RuleBasedSemiAutomaticOntologyLearning rdf:type :Thesis ,
+                                                 owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#Rushi
+
+:Rushi rdf:type :Technician ,
+                owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#Samuel
+
+:Samuel rdf:type :UGStudent ,
+                 owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#Sathyanarayana
+
+:Sathyanarayana rdf:type :JrAssistant ,
+                         owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#Semantic_Query_Reasoning_in_Distributed_Environment
+
+:Semantic_Query_Reasoning_in_Distributed_Environment rdf:type :Thesis ,
+                                                              owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#Stephen
+
+:Stephen rdf:type :PGStudent ,
+                  owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#TanveerJahan
+
+:TanveerJahan rdf:type :ResearchScholar ,
+                       owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#TheHindu
+
+:TheHindu rdf:type :NewsPaper ,
+                   owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#TimesOfIndia
+
+:TimesOfIndia rdf:type :NewsPaper ,
+                       owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#TrainYourBrain
+
+:TrainYourBrain rdf:type :GeneralBook ,
+                         owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#Vaartha
+
+:Vaartha rdf:type :NewsPaper ,
+                  owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#VisualBasics
+
+:VisualBasics rdf:type :UGTextBook ,
+                       owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#William
+
+:William rdf:type :PGStudent ,
+                  owl:NamedIndividual .
+
+
+
+###  http://www.LibrarySystem.com/ontologies/LMS.owl#YBhavani
+
+:YBhavani rdf:type :Faculty ,
+                   owl:NamedIndividual .
+
+
+
+
+
+#################################################################
+#
+#    General axioms
+#
+#################################################################
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :LibraryMember
+                :LibraryPersonnel
+                :LibraryResource
+                :LibraryService
+              )
+] .
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Book
+                :CD
+                :Journal
+                :NewsPaper
+                :OnlineJournal
+                :Thesis
+              )
+] .
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :AsstLibrarian
+                :JrAssistant
+                :Librarian
+                :Technician
+              )
+] .
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :GeneralBook
+                :ReferenceBook
+                :TextBook
+              )
+] .
+
+
+
+
+###  Generated by the OWL API (version 3.4.5-SNAPSHOT) http://owlapi.sourceforge.net
